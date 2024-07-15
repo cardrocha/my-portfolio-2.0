@@ -5,8 +5,8 @@ import * as S from 'react-icons/si'
 
 const Status = () => {
   return (
-    <section className="mx-auto max-w-screen-xlxl container">
-      <div className="flex flex-col xl:flex-row gap-5 items-center justify-center pl-0 xl:pl-72 py-10 w-full xl:w-[940px]">
+    <section className="mx-auto max-w-screen-xl container">
+      <div className="flex flex-col xl:flex-row gap-5 items-center justify-center py-10 w-full">
         <h2 className="text-4xl lg:text-5xl font-bold text-indigo-900 pb-2 whitespace-nowrap">
           Level: 2<span className='text-2xl'> year</span>
         </h2>
@@ -22,7 +22,7 @@ const Status = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col xl:flex-row gap-10 lg:gap-0 items-center justify-around w-full xl:w-[1569px] mx-auto">
+      <div className="flex flex-col xl:flex-row gap-10 lg:gap-0 items-center justify-around w-full mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-0 lg:gap-10 justify-around text-3xl md:w-full lg:w-[940px]">
           <div>
             <h2 className="text-4xl text-center lg:text-left lg:text-5xl font-bold text-indigo-900 pl-3 lg:pl-0 pb-5">

@@ -3,8 +3,8 @@ import * as F from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <section className="mx-auto max-w-screen-xlxl container pb-14 pt-24 md:pt-[137px]">
-      <div className="flex flex-col-reverse lg:flex-row gap-24 items-center justify-around">
+    <section className="mx-auto max-w-screen-xl container pb-14 pt-24 md:pt-[137px]">
+      <div className="flex flex-col-reverse lg:flex-row gap-16 md:gap-0 items-center justify-around">
         <p className="text-xl md:text-2xl lg:text-3xl w-full p-2 lg:w-[940px] self-start">
           <span className="text-indigo-800 text-xl md:text-2xl lg:text-3xl font-bold">
             Se você procura um{' '}
