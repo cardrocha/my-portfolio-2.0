@@ -8,7 +8,7 @@ type Props = {
 const ProjectList = ({ repo }: Props) => {
   return (
     <div className='p-14'>
-      <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-2'>
+      <ul className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 lg:gap-2'>
         {repo.map((repo) => (
           <RepoBox
           key={repo.id}
