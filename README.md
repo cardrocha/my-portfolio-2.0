@@ -29,7 +29,7 @@ git clone https://github.com/seu-usuario/portfolio-developer.git
 Navegue até o diretório do projeto:
 bash
 Copy code
-cd portfolio-developer
+cd my-portfolio
 Instale as dependências:
 bash
 Copy code
