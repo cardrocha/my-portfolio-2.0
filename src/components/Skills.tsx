@@ -66,7 +66,7 @@ const Skills = () => {
           </li>
       </ul>
       <div className='flex flex-col-reverse'>
-        <ul className="grid grid-cols-6 md:grid-cols-11 md:pr-10 lg:pr-0 gap-12 lg:w-[800px] mx-auto">
+        <ul className="grid grid-cols-6 md:grid-cols-11 w-full gap-0 md:pr-10 lg:pr-0 md:gap-12 lg:w-[800px] mx-auto">
           <li>
             <A.AiFillHtml5
               onClick={() => setOpen('html')}

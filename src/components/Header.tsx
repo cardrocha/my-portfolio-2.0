@@ -13,11 +13,11 @@ const Header = () => {
   }
 
   return (
-    <header className="relative max-w-screen-xlxl mx-auto container bg-indigo-800 text-white p-5 rounded">
+    <header className="relative max-w-screen-xl mx-auto container bg-indigo-800 text-white p-5 rounded">
       <div className="flex flex-col lg:flex-row items-start md:items-center gap-0 md:gap-20 justify-center">
         <RxHamburgerMenu
-          onClick={() => setOpen(true)}
-          className="md:hidden absolute right-5 text-4xl"
+          onClick={() => setOpen(!open)}
+          className="md:hidden absolute right-5 text-4xl cursor-pointer"
         />
         <h1 className="flex gap-5 items-center text-2xl md:text-4xl font-bold">
           <FaLaptopCode />
@@ -73,7 +73,7 @@ const Header = () => {
           </ul>
         </nav>
         <nav
-          className={`transform transition-all duration-300 ${open ? 'block, translate-x-0' : 'hidden, translate-x-full'} absolute border-l-2 bg-indigo-800 w-40 h-lvh z-10 top-0 right-0`}
+          className={`transform transition-transform duration-300 ${open ? 'translate-x-0' : 'translate-x-full'} md:hidden fixed top-0 right-0 w-40 h-full border-l-2 bg-indigo-800 z-10`}
         >
           <ul className="flex flex-col pt-10 items-center gap-3 lg:gap-6">
             <li onClick={() => handleLinkClick('/')}>
@@ -122,7 +122,7 @@ const Header = () => {
               </Link>
             </li>
             <li
-              className="bg-indigo-900 border-[1px] border-indigo-950 rounded-lg px-4 py-2 mt-3"
+              className="bg-indigo-900 border-[1px] border-indigo-950 rounded-lg px-4 py-2 mt-3 cursor-pointer"
               onClick={() => setOpen(false)}
             >
               FECHAR
@@ -135,3 +135,4 @@ const Header = () => {
 }
 
 export default Header
+
