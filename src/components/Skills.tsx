@@ -8,64 +8,69 @@ import { useEffect, useState } from 'react'
 import data from '../../data.json'
 
 interface InfoItem {
-  id: string;
-  title: string;
-  description: string;
+  id: string
+  title: string
+  description: string
 }
 
 const Skills = () => {
-  const [open, setOpen] = useState('react');
-  const [info, setInfo] = useState<InfoItem | undefined>(undefined);
+  const [open, setOpen] = useState('react')
+  const [info, setInfo] = useState<InfoItem | undefined>(undefined)
 
   useEffect(() => {
-    const selectedItem = data.find((item) => item.id === open);
+    const selectedItem = data.find((item) => item.id === open)
     if (selectedItem) {
-      setInfo(selectedItem);
+      setInfo(selectedItem)
     }
-  }, [open]);
+  }, [open])
 
   return (
     <div className="max-w-screen-xlxl mx-auto container flex flex-col gap-14 p-6 lg:p-24">
       <h2 className="text-3xl lg:text-4xl text-center text-indigo-900 dark:text-white font-bold">
         Tecnologia e Habilidades
       </h2>
-      <h3 className="text-2xl lg:text-3xl text-center text-indigo-900 dark:text-white font-bold">Minhas princiais skills:</h3>
-      <ul className='flex items-center gap-2 lg:gap-0 justify-center md:justify-around'>
+      <h3 className="text-2xl lg:text-3xl text-center text-indigo-900 dark:text-white font-bold">
+        Minhas princiais skills:
+      </h3>
+      <ul className="flex items-center gap-2 lg:gap-0 justify-center md:justify-around">
         <li>
           <S.SiReact
-           onClick={() => setOpen('react')}
-          className={`text-5xl mb-2 text-blue-400 dark:bg-white scale-100 lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'react' ? 'border-2' : ''}`}/>
+            onClick={() => setOpen('react')}
+            className={`text-5xl mb-2 text-blue-400 dark:bg-white scale-100 lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'react' ? 'border-2' : ''}`}
+          />
         </li>
         <li>
-            <S.SiTypescript
-              onClick={() => setOpen('typescript')}
-              className={`text-5xl mb-2 text-blue-600 dark:bg-white scale-100 lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'typescript' ? 'border-2' : ''}`}
-            />
-          </li>
-          <li>
-            <S.SiStyledcomponents
-              onClick={() => setOpen('styled')}
-              className={`text-5xl mb-2 text-fuchsia-600 dark:bg-white scale-100 lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'styled' ? 'border-2' : ''}`}
-            />
-          </li>
-          <li>
-          <S.SiVite onClick={() => setOpen('vite')}
-              className={`text-5xl mb-2 text-amber-700 scale-100 dark:bg-white lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'vite' ? 'border-2' : ''}`} />
-          </li>
-          <li>
-            <T.TbBrandNextjs
-              onClick={() => setOpen('nextjs')}
-              className={`text-5xl mb-2 text-gray-700 scale-100 dark:bg-white lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'nextjs' ? 'border-2' : ''}`}
-            />
-          </li>
-          <li>
-            <S.SiTailwindcss
-              onClick={() => setOpen('tailwind')}
-              className={`text-5xl mb-2 text-sky-600 scale-100 dark:bg-white lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'tailwind' ? 'border-2' : ''}`}
-            />
-          </li>
+          <S.SiTypescript
+            onClick={() => setOpen('typescript')}
+            className={`text-5xl mb-2 text-blue-600 dark:bg-white scale-100 lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'typescript' ? 'border-2' : ''}`}
+          />
+        </li>
+        <li>
+          <S.SiStyledcomponents
+            onClick={() => setOpen('styled')}
+            className={`text-5xl mb-2 text-fuchsia-600 dark:bg-white scale-100 lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'styled' ? 'border-2' : ''}`}
+          />
+        </li>
+        <li>
+          <S.SiVite
+            onClick={() => setOpen('vite')}
+            className={`text-5xl mb-2 text-amber-700 scale-100 dark:bg-white lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'vite' ? 'border-2' : ''}`}
+          />
+        </li>
+        <li>
+          <T.TbBrandNextjs
+            onClick={() => setOpen('nextjs')}
+            className={`text-5xl mb-2 text-gray-700 scale-100 dark:bg-white lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'nextjs' ? 'border-2' : ''}`}
+          />
+        </li>
+        <li>
+          <S.SiTailwindcss
+            onClick={() => setOpen('tailwind')}
+            className={`text-5xl mb-2 text-sky-600 scale-100 dark:bg-white lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'tailwind' ? 'border-2' : ''}`}
+          />
+        </li>
       </ul>
-      <div className='flex flex-col-reverse'>
+      <div className="flex flex-col-reverse">
         <ul className="grid grid-cols-6 md:grid-cols-11 w-full gap-0 md:pr-10 lg:pr-0 md:gap-12 lg:w-[800px] mx-auto">
           <li>
             <A.AiFillHtml5
@@ -201,20 +206,21 @@ const Skills = () => {
           </li>
         </ul>
         <div>
-        {info && (
-        <div className="flex flex-col gap-2 w-full h-full lg:h-[240px] mx-auto">
-          <h3 className="text-3xl lg:text-4xl text-blue-600 font-bold text-center border-2 bg-blue-50 border-blue-600 rounded-xl p-4">
-            {info.title}
+          {info && (
+            <div className="flex flex-col gap-2 w-full h-full lg:h-[240px] mx-auto">
+              <h3 className="text-3xl lg:text-4xl text-blue-600 font-bold text-center border-2 bg-blue-50 border-blue-600 rounded-xl p-4">
+                {info.title}
+              </h3>
+              <p className="text-sm lg:text-base text-indigo-700 border-2 border-indigo-600 rounded-md bg-indigo-50 p-4">
+                {info.description}
+              </p>
+            </div>
+          )}
+          <h3 className="text-3xl text-center mt-10 lg:mt-0 mb-10 text-indigo-900 dark:text-white font-bold">
+            Outras skills:
           </h3>
-          <p className="text-sm lg:text-base text-indigo-700 border-2 border-indigo-600 rounded-md bg-indigo-50 p-4">
-            {info.description}
-          </p>
-        </div>
-         )}
-         <h3 className="text-3xl text-center mt-10 lg:mt-0 mb-10 text-indigo-900 dark:text-white font-bold">Outras skills:</h3>
         </div>
       </div>
-      
     </div>
   )
 }

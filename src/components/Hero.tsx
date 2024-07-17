@@ -9,9 +9,9 @@ const Hero = () => {
           <span className="text-indigo-800 text-xl md:text-2xl lg:text-3xl font-bold">
             Se você procura um{' '}
             <span className="text-2xl md:text-3xl lg:text-4xl font-extrabold">
-              Desenvolvedor Front-end
+              Desenvolvedor Front-end<br /> <span className='text-xl md:text-3xl'> com 2 anos de experiência</span>
             </span>
-          </span>{' '}
+          </span>,{' '}
           dedicado a criar experiências digitais excepcionais, você está no
           lugar certo!{' '}
           <span className="text-indigo-800 text-2xl lg:text-3xl font-bold">

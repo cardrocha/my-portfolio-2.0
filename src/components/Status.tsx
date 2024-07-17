@@ -8,10 +8,11 @@ const Status = () => {
     <section className="mx-auto max-w-screen-xl container">
       <div className="flex flex-col xl:flex-row gap-5 items-center justify-center py-10 w-full">
         <h2 className="text-4xl lg:text-5xl font-bold text-indigo-900 dark:text-white pb-2 whitespace-nowrap">
-          Level: 2<span className='text-2xl'> year</span>
+          Level: 2<span className="text-2xl"> year</span>
         </h2>
         <p className="text-2xl lg:text-3xl text-indigo-900 dark:text-white font-bold text-center whitespace-nowrap">
-          <span className="text-2xl font-extrabold lg:text-4xl">Classe:</span> Developer Front-end
+          <span className="text-2xl font-extrabold lg:text-4xl">Classe:</span>{' '}
+          Developer Front-end
         </p>
         <div className="flex gap-5 items-center">
           <p className="text-xl lg:text-2xl text-indigo-900 dark:text-white font-bold mt-2 whitespace-nowrap">
@@ -25,10 +26,10 @@ const Status = () => {
       <div className="flex flex-col xl:flex-row gap-10 lg:gap-0 items-center justify-around w-full mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-0 lg:gap-10 justify-around text-3xl md:w-full lg:w-[940px]">
           <div>
-            <h2 className="text-4xl text-center lg:text-left lg:text-5xl font-bold text-indigo-900 pl-3 lg:pl-0 pb-5">
+            <h2 className="text-4xl text-center lg:text-left lg:text-5xl font-bold text-indigo-900 dark:text-white pl-3 lg:pl-0 pb-5">
               Status Skills
             </h2>
-            <li className="relative font-bold text-indigo-800 flex items-center gap-2 justify-start">
+            <li className="relative font-bold text-indigo-800 dark:text-white flex items-center gap-2 justify-start">
               <A.AiFillHtml5 className="text-5xl mb-2 text-orange-400 scale-125 p-1 cursor-pointer" />
               <p className="absolute z-10 right-1 bottom-9 text-2xl font-medium text-right">
                 90/100
@@ -37,7 +38,7 @@ const Status = () => {
                 <div className="bg-amber-600 w-64 h-6 rounded-xl absolute top-0 left-0"></div>
               </div>
             </li>
-            <li className=" relative font-bold text-indigo-800 flex items-center justify-start">
+            <li className=" relative font-bold text-indigo-800 dark:text-white flex items-center justify-start">
               <I.IoLogoCss3 className="text-5xl text-blue-400 scale-125 p-1 cursor-pointer" />
               <p className="absolute z-10 right-1 bottom-8 text-2xl font-medium text-right">
                 90/100
@@ -46,7 +47,7 @@ const Status = () => {
                 <div className="bg-indigo-800 w-64 h-6 rounded-xl absolute top-0 left-0"></div>
               </div>
             </li>
-            <li className="relative font-bold text-indigo-800 flex items-center gap-2 justify-start">
+            <li className="relative font-bold text-indigo-800 dark:text-white flex items-center gap-2 justify-start">
               <I.IoLogoJavascript className="text-5xl mb-2 text-yellow-500 scale-125 p-1 cursor-pointer" />
               <p className="absolute z-10 right-1 bottom-9 text-2xl font-medium text-right">
                 75/100
@@ -55,7 +56,7 @@ const Status = () => {
                 <div className="bg-yellow-500 w-48 h-6 rounded-xl absolute top-0 left-0"></div>
               </div>
             </li>
-            <li className=" relative font-bold text-indigo-800 flex items-center gap-2 justify-start">
+            <li className=" relative font-bold text-indigo-800 dark:text-white flex items-center gap-2 justify-start">
               <I.IoLogoSass className="text-5xl mb-2 text-pink-300 scale-125 p-1 cursor-pointer" />
               <p className="absolute z-10 right-1 bottom-9 text-2xl font-medium text-right">
                 70/100
@@ -66,7 +67,7 @@ const Status = () => {
             </li>
           </div>
           <div className="flex flex-col list-none pt-0 md:pt-[60px]">
-            <li className=" relative font-bold text-indigo-800 flex items-center gap-2 justify-start">
+            <li className=" relative font-bold text-indigo-800 dark:text-white flex items-center gap-2 justify-start">
               <S.SiReact className="text-5xl mb-2 text-blue-400 scale-125 p-1 cursor-pointer" />
               <p className="absolute z-10 right-1 bottom-9 text-2xl font-medium text-right">
                 80/100
@@ -75,7 +76,7 @@ const Status = () => {
                 <div className="bg-blue-400 w-60 h-6 rounded-xl absolute top-0 left-0"></div>
               </div>
             </li>
-            <li className="relative font-bold text-indigo-800 flex items-center gap-2 justify-start">
+            <li className="relative font-bold text-indigo-800 dark:text-white flex items-center gap-2 justify-start">
               <S.SiTypescript className="text-5xl mb-2 text-blue-600 scale-125 p-1 cursor-pointer" />
               <p className="absolute z-10 right-1 bottom-9 text-2xl font-medium text-right">
                 75/100
@@ -84,7 +85,7 @@ const Status = () => {
                 <div className="bg-blue-700 w-52 h-6 rounded-xl absolute top-0 left-0"></div>
               </div>
             </li>
-            <li className=" relative font-bold text-indigo-800 flex items-center gap-2 justify-start">
+            <li className=" relative font-bold text-indigo-800 dark:text-white flex items-center gap-2 justify-start">
               <I.IoMdGitBranch className="text-5xl mb-2 text-orange-500 scale-125 p-1 cursor-pointer" />
               <p className="absolute z-10 right-1 bottom-9 text-2xl font-medium text-right">
                 75/100
@@ -93,7 +94,7 @@ const Status = () => {
                 <div className="bg-amber-700 w-52 h-6 rounded-xl absolute top-0 left-0"></div>
               </div>
             </li>
-            <li className="relative font-bold whitespace-nowrap gap-1 text-indigo-800 flex items-center justify-start">
+            <li className="relative font-bold whitespace-nowrap gap-1 text-indigo-800 dark:text-white flex items-center justify-start">
               <S.SiStyledcomponents className="text-5xl mb-2 text-fuchsia-500 scale-125 p-1 cursor-pointer" />
               <p className="absolute z-10 right-1 bottom-9 text-2xl font-medium text-right">
                 75/100
@@ -117,21 +118,54 @@ const Status = () => {
           <h2 className="text-indigo-800 text-4xl font-bold">Biography:</h2>
           <div>
             <p className="text-indigo-900 text-xl font-medium py-4">
-              <span className='font-bold'>História de Origem</span>: Em 2020, o jovem aventureiro <span className='font-bold'>Ricardo</span> iniciou
-              sua jornada na terra do desenvolvimento com um curso de
-              programação de jogos em Unity na <span className='font-bold underline'>Reprograma-se</span>, onde descobriu os segredos da
-              <span className='font-bold underline italic'> linguagem C#</span>. <br/><br/> Fascinado pelo poder da criação digital, ele se
-              aventurou ainda mais e, em 2021, ingressou na guilda <span className='font-bold underline'>FreeCodeCamp</span>,
-              onde iniciou as artes do <span className='font-bold underline italic'>Design Responsivo para a Web</span>. Durante
-              este período, criou artefatos notáveis como um aplicativo de fotos
-              de gatos e um tributo místico a uma lendária banda de rock. <br/><br/>
-              <span className='font-bold'>Formação e Treinamento</span>: <span className='font-bold'>Ricardo</span> continuou sua busca por
-              conhecimento, e em 2024, concluiu o épico curso <span className='font-bold underline italic'>Full-Stack Python </span>
-              na prestigiosa Academia <span className='font-bold underline'>EBAC</span>. Aqui, ele aprimorou suas habilidades
-              em <span className='font-bold underline italic'>React, TypeScript e Styled-Components</span>, tornando-se um
-              verdadeiro mestre das boas práticas de desenvolvimento e dos
-              métodos ágeis, incluindo os lendários <span className='font-bold underline italic'>Code Clean, BEM e SMACSS</span>.<br/><br/>
-              Nos <span className='font-bold underline'>últimos dois anos</span>, <span className='font-bold'>Ricardo</span> tem atuado como <span className='font-bold underline italic'>Desenvolvedor Front-end Júnior</span>, aplicando com maestria as práticas e conhecimentos adquiridos em sua formação. Sua dedicação e competência têm sido fundamentais para o sucesso de inúmeras missões no campo do desenvolvimento.
+              <span className="font-bold">História de Origem</span>: Em 2020, o
+              jovem aventureiro <span className="font-bold">Ricardo</span>{' '}
+              iniciou sua jornada na terra do desenvolvimento com um curso de
+              programação de jogos em Unity na{' '}
+              <span className="font-bold underline">Reprograma-se</span>, onde
+              descobriu os segredos da
+              <span className="font-bold underline italic">
+                {' '}
+                linguagem C#
+              </span>. <br />
+              <br /> Fascinado pelo poder da criação digital, ele se aventurou
+              ainda mais e, em 2021, ingressou na guilda{' '}
+              <span className="font-bold underline">FreeCodeCamp</span>, onde
+              iniciou as artes do{' '}
+              <span className="font-bold underline italic">
+                Design Responsivo para a Web
+              </span>
+              . Durante este período, criou artefatos notáveis como um
+              aplicativo de fotos de gatos e um tributo místico a uma lendária
+              banda de rock. <br />
+              <br />
+              <span className="font-bold">Formação e Treinamento</span>:{' '}
+              <span className="font-bold">Ricardo</span> continuou sua busca por
+              conhecimento, e em 2024, concluiu o épico curso{' '}
+              <span className="font-bold underline italic">
+                Full-Stack Python{' '}
+              </span>
+              na prestigiosa Academia{' '}
+              <span className="font-bold underline">EBAC</span>. Aqui, ele
+              aprimorou suas habilidades em{' '}
+              <span className="font-bold underline italic">
+                React, TypeScript e Styled-Components
+              </span>
+              , tornando-se um verdadeiro mestre das boas práticas de
+              desenvolvimento e dos métodos ágeis, incluindo os lendários{' '}
+              <span className="font-bold underline italic">
+                Code Clean, BEM e SMACSS
+              </span>
+              .<br />
+              <br />
+              Nos <span className="font-bold underline">últimos dois anos</span>
+              , <span className="font-bold">Ricardo</span> tem atuado como{' '}
+              <span className="font-bold underline italic">
+                Desenvolvedor Front-end Júnior
+              </span>
+              , aplicando com maestria as práticas e conhecimentos adquiridos em
+              sua formação. Sua dedicação e competência têm sido fundamentais
+              para o sucesso de inúmeras missões no campo do desenvolvimento.
             </p>
           </div>
         </div>

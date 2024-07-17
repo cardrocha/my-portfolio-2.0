@@ -99,11 +99,11 @@ const Header = () => {
         <nav
           className={`transform transition-transform duration-300 ${open ? 'translate-x-0' : 'translate-x-full'} md:hidden fixed top-0 right-0 w-40 h-full border-l-2 bg-indigo-800 z-10`}
         >
-            <RxHamburgerMenu
-              title="Clique aqui para fechar o menu"
-              onClick={() => setOpen(!open)}
-              className="absolute top-5 left-16 md:hidden right-5 mb-5 text-4xl cursor-pointer"
-            />
+          <RxHamburgerMenu
+            title="Clique aqui para fechar o menu"
+            onClick={() => setOpen(!open)}
+            className="absolute top-5 left-16 md:hidden right-5 mb-5 text-4xl cursor-pointer"
+          />
           <ul className="flex flex-col pt-20 items-center gap-3 lg:gap-6">
             <li onClick={() => handleLinkClick('/')}>
               <Link
