@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <header
-      className={`relative max-w-screen-xl mx-auto container bg-indigo-800 text-white p-10 rounded ${darkMode ? 'dark' : ''}`}
+      className={`relative max-w-screen-xl mx-auto container bg-indigo-800 text-white p-10 md:p-6 rounded ${darkMode ? 'dark' : ''}`}
     >
       <div className="flex flex-col lg:flex-row items-start md:items-center gap-0 md:gap-20 justify-center">
         <RxHamburgerMenu
@@ -88,7 +88,7 @@ const Header = () => {
         </nav>
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="absolute top-4 right-2 md:top-10 md:right-7 bg-black dark:bg-white dark:text-black border-2 border-indigo-950 dark:border-white text-base lg:text-xl px-4 py-1 rounded-full"
+          className="absolute top-4 right-2 md:top-[26px] md:right-7 bg-black dark:bg-white dark:text-black border-2 border-indigo-950 dark:border-white text-base lg:text-xl px-4 py-1 rounded-full"
         >
           {darkMode ? (
             <CiLight className="text-2xl" />
