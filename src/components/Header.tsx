@@ -1,11 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FaLaptopCode } from 'react-icons/fa'
 import { RxHamburgerMenu } from 'react-icons/rx'
+import { CiLight } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
 
 const Header = () => {
+  const [darkMode, setDarkMode] = useState(false);
   const [selected, setSelected] = useState(window.location.pathname)
   const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
 
   const handleLinkClick = (path: string) => {
     setSelected(path)
@@ -13,9 +24,10 @@ const Header = () => {
   }
 
   return (
-    <header className="relative max-w-screen-xl mx-auto container bg-indigo-800 text-white p-5 rounded">
+    <header className={`relative max-w-screen-xl mx-auto container bg-indigo-800 text-white p-5 rounded ${darkMode ? 'dark' : ''}`}>
       <div className="flex flex-col lg:flex-row items-start md:items-center gap-0 md:gap-20 justify-center">
         <RxHamburgerMenu
+          title='Clique aqui para abrir o menu'
           onClick={() => setOpen(!open)}
           className="md:hidden absolute right-5 text-4xl cursor-pointer"
         />
@@ -75,7 +87,12 @@ const Header = () => {
         <nav
           className={`transform transition-transform duration-300 ${open ? 'translate-x-0' : 'translate-x-full'} md:hidden fixed top-0 right-0 w-40 h-full border-l-2 bg-indigo-800 z-10`}
         >
-          <ul className="flex flex-col pt-10 items-center gap-3 lg:gap-6">
+          <ul className="flex flex-col pt-5 items-center gap-3 lg:gap-6">
+            <RxHamburgerMenu
+              title='Clique aqui para fechar o menu'
+              onClick={() => setOpen(!open)}
+              className="md:hidden right-5 mb-5 text-4xl cursor-pointer"
+            />
             <li onClick={() => handleLinkClick('/')}>
               <Link
                 title="Clique aqui para ir a Home"
@@ -121,18 +138,14 @@ const Header = () => {
                 PROJECTS
               </Link>
             </li>
-            <li
-              className="bg-indigo-900 border-[1px] border-indigo-950 rounded-lg px-4 py-2 mt-3 cursor-pointer"
-              onClick={() => setOpen(false)}
-            >
-              FECHAR
-            </li>
           </ul>
         </nav>
+        <button onClick={() => setDarkMode(!darkMode)} className='bg-black dark:bg-white dark:text-black border-2 border-indigo-950 dark:border-white text-base lg:text-xl px-4 py-1 rounded-full'>
+          {darkMode ? <CiLight className='text-2xl' /> : <MdDarkMode className='text-2xl' />}
+        </button>
       </div>
     </header>
   )
 }
 
 export default Header
-

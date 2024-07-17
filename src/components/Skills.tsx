@@ -61,7 +61,7 @@ const Skills = () => {
           <li>
             <S.SiTailwindcss
               onClick={() => setOpen('tailwind')}
-              className={`text-5xl mb-2 text-sky-600 scale-95 lg:scale-125 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'tailwind' ? 'border-2' : ''}`}
+              className={`text-5xl mb-2 text-sky-600 scale-100 lg:scale-150 duration-75 shadow shadow-white/100 rounded-lg p-1 cursor-pointer ${open === 'tailwind' ? 'border-2' : ''}`}
             />
           </li>
       </ul>

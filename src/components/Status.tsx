@@ -106,7 +106,7 @@ const Status = () => {
         </div>
         <div className="pb-5">
           <img
-            className="w-72 h-72 border-2 border-gray-800 rounded-full object-cover filter drop-shadow-2xl"
+            className="w-72 h-72 border-2 border-gray-800 dark:border-gray-500 rounded-full object-cover filter drop-shadow-2xl"
             src={perfil}
             alt="foto de perfil"
           />
