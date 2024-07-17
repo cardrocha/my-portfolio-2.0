@@ -42,6 +42,7 @@ const Hero = () => {
         <div className="flex items-center justify-center gap-5 mt-5 w-full">
           <div className="flex flex-col items-center">
             <a
+              target='_blank'
               className="text-sm p-2 font-bold hover:bg-slate-900 text-center border-4 border-indigo-900 rounded-full"
               href="https://www.linkedin.com/in/cardrocha/"
               title='Acesse meu perfil no Linkedin'
@@ -52,6 +53,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-col items-center group">
             <a
+              target='_blank'
               className="text-sm p-2 font-bold group-hover:bg-slate-900 text-center border-4 border-indigo-900 rounded-full"
               href="https://github.com/cardrocha"
               title='De uma olhada nos meus repositórios'

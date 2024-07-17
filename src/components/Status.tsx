@@ -7,17 +7,17 @@ const Status = () => {
   return (
     <section className="mx-auto max-w-screen-xl container">
       <div className="flex flex-col xl:flex-row gap-5 items-center justify-center py-10 w-full">
-        <h2 className="text-4xl lg:text-5xl font-bold text-indigo-900 pb-2 whitespace-nowrap">
+        <h2 className="text-4xl lg:text-5xl font-bold text-indigo-900 dark:text-white pb-2 whitespace-nowrap">
           Level: 2<span className='text-2xl'> year</span>
         </h2>
-        <p className="text-2xl lg:text-3xl text-indigo-900 font-bold text-center whitespace-nowrap">
+        <p className="text-2xl lg:text-3xl text-indigo-900 dark:text-white font-bold text-center whitespace-nowrap">
           <span className="text-2xl font-extrabold lg:text-4xl">Classe:</span> Developer Front-end
         </p>
         <div className="flex gap-5 items-center">
-          <p className="text-xl lg:text-2xl text-indigo-900 font-bold mt-2 whitespace-nowrap">
+          <p className="text-xl lg:text-2xl text-indigo-900 dark:text-white font-bold mt-2 whitespace-nowrap">
             EXP: 65052
           </p>
-          <p className="text-xl lg:text-2xl text-indigo-900 font-bold mt-2 whitespace-nowrap">
+          <p className="text-xl lg:text-2xl text-indigo-900 dark:text-white font-bold mt-2 whitespace-nowrap">
             NEXT: 42
           </p>
         </div>
