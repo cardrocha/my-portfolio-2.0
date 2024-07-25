@@ -4,6 +4,7 @@ import { FaLaptopCode } from 'react-icons/fa'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { CiLight } from 'react-icons/ci'
 import { MdDarkMode } from 'react-icons/md'
+import Button from './Button'
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false)
@@ -86,7 +87,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <button
+        <Button
           onClick={() => setDarkMode(!darkMode)}
           className="absolute top-4 right-2 md:top-[26px] md:right-7 bg-black dark:bg-white dark:text-black border-2 border-indigo-950 dark:border-white text-base lg:text-xl px-4 py-1 rounded-full"
         >
@@ -95,7 +96,7 @@ const Header = () => {
           ) : (
             <MdDarkMode className="text-2xl" />
           )}
-        </button>
+        </Button>
         <nav
           className={`transform transition-transform duration-300 ${open ? 'translate-x-0' : 'translate-x-full'} md:hidden fixed top-0 right-0 w-40 h-full border-l-2 bg-indigo-800 z-10`}
         >
