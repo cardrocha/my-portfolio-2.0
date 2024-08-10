@@ -3,13 +3,13 @@ import { CiLight } from "react-icons/ci";
 import { FaLaptopCode } from "react-icons/fa";
 import { MdDarkMode } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Button from "./Button";
 
 const Header = () => {
 	const [darkMode, setDarkMode] = useState(false);
-	const [selected, setSelected] = useState(window.location.pathname);
 	const [open, setOpen] = useState(false);
+	const location = useLocation();
 
 	useEffect(() => {
 		if (darkMode) {
@@ -18,17 +18,6 @@ const Header = () => {
 			document.documentElement.classList.remove("dark");
 		}
 	}, [darkMode]);
-
-	const handleLinkClick = (path: string) => {
-		setSelected(path);
-		setOpen(false);
-	};
-
-	const handleKeyDown = (event: React.KeyboardEvent<HTMLLIElement>) => {
-		if (event.key === "Enter" || event.key === " ") {
-			handleLinkClick("/");
-		}
-	};
 
 	return (
 		<header
@@ -46,59 +35,47 @@ const Header = () => {
 				</h1>
 				<nav>
 					<ul className="hidden md:grid grid-cols-3 md:grid-cols-5 lg:flex items-center gap-3 lg:gap-6">
-						<li onClick={() => handleLinkClick("/")} onKeyDown={handleKeyDown}>
+						<li>
 							<Link
 								title="Clique aqui para ir a Home"
 								to="/"
-								className={`text-base lg:text-xl px-4 py-2 rounded ${selected === "/" && "bg-indigo-600"}`}
+								className={`text-base lg:text-xl px-4 py-2 rounded ${location.pathname === "/" ? "bg-indigo-600 text-white" : ""}`}
 							>
 								HOME
 							</Link>
 						</li>
-						<li
-							onClick={() => handleLinkClick("/about")}
-							onKeyDown={handleKeyDown}
-						>
+						<li>
 							<Link
 								title="Clique aqui para ir a Status"
 								to="/about"
-								className={`text-base lg:text-xl px-4 py-2 rounded ${selected === "/about" && "bg-indigo-600"}`}
+								className={`text-base lg:text-xl px-4 py-2 rounded ${location.pathname === "/about" ? "bg-indigo-600 text-white" : ""}`}
 							>
 								STATUS
 							</Link>
 						</li>
-						<li
-							onClick={() => handleLinkClick("/skills")}
-							onKeyDown={handleKeyDown}
-						>
+						<li>
 							<Link
 								title="Clique aqui para ir a Skills"
 								to="/skills"
-								className={`text-base lg:text-xl px-4 py-2 rounded ${selected === "/skills" && "bg-indigo-600"}`}
+								className={`text-base lg:text-xl px-4 py-2 rounded ${location.pathname === "/skills" ? "bg-indigo-600 text-white" : ""}`}
 							>
 								SKILLS
 							</Link>
 						</li>
-						<li
-							onClick={() => handleLinkClick("/quest")}
-							onKeyDown={handleKeyDown}
-						>
+						<li>
 							<Link
 								title="Clique aqui para ir a Quest"
 								to="/quest"
-								className={`text-base lg:text-xl px-4 py-2 rounded ${selected === "/quest" && "bg-indigo-600"}`}
+								className={`text-base lg:text-xl px-4 py-2 rounded ${location.pathname === "/quest" ? "bg-indigo-600 text-white" : ""}`}
 							>
 								QUEST
 							</Link>
 						</li>
-						<li
-							onClick={() => handleLinkClick("/project")}
-							onKeyDown={handleKeyDown}
-						>
+						<li>
 							<Link
 								title="Clique aqui para ir a Projects"
 								to="/project"
-								className={`text-base lg:text-xl px-4 py-2 rounded ${selected === "/project" && "bg-indigo-600"}`}
+								className={`text-base lg:text-xl px-4 py-2 rounded ${location.pathname === "/project" ? "bg-indigo-600 text-white" : ""}`}
 							>
 								PROJECTS
 							</Link>
@@ -124,59 +101,47 @@ const Header = () => {
 						className="absolute top-5 left-16 md:hidden right-5 mb-5 text-4xl cursor-pointer"
 					/>
 					<ul className="flex flex-col pt-20 items-center gap-3 lg:gap-6">
-						<li onClick={() => handleLinkClick("/")} onKeyDown={handleKeyDown}>
+						<li>
 							<Link
 								title="Clique aqui para ir a Home"
 								to="/"
-								className={`text-base lg:text-xl px-4 py-2 rounded ${selected === "/" && "bg-indigo-600"}`}
+								className={`text-base lg:text-xl px-4 py-2 rounded ${location.pathname === "/" ? "bg-indigo-600 text-white" : ""}`}
 							>
 								HOME
 							</Link>
 						</li>
-						<li
-							onClick={() => handleLinkClick("/about")}
-							onKeyDown={handleKeyDown}
-						>
+						<li>
 							<Link
 								title="Clique aqui para ir a Status"
 								to="/about"
-								className={`text-base lg:text-xl px-4 py-2 rounded ${selected === "/about" && "bg-indigo-600"}`}
+								className={`text-base lg:text-xl px-4 py-2 rounded ${location.pathname === "/about" ? "bg-indigo-600 text-white" : ""}`}
 							>
 								STATUS
 							</Link>
 						</li>
-						<li
-							onClick={() => handleLinkClick("/skills")}
-							onKeyDown={handleKeyDown}
-						>
+						<li>
 							<Link
 								title="Clique aqui para ir a Skills"
 								to="/skills"
-								className={`text-base lg:text-xl px-4 py-2 rounded ${selected === "/skills" && "bg-indigo-600"}`}
+								className={`text-base lg:text-xl px-4 py-2 rounded ${location.pathname === "/skills" ? "bg-indigo-600 text-white" : ""}`}
 							>
 								SKILLS
 							</Link>
 						</li>
-						<li
-							onClick={() => handleLinkClick("/quest")}
-							onKeyDown={handleKeyDown}
-						>
+						<li>
 							<Link
 								title="Clique aqui para ir a Quest"
 								to="/quest"
-								className={`text-base lg:text-xl px-4 py-2 rounded ${selected === "/quest" && "bg-indigo-600"}`}
+								className={`text-base lg:text-xl px-4 py-2 rounded ${location.pathname === "/quest" ? "bg-indigo-600 text-white" : ""}`}
 							>
 								QUEST
 							</Link>
 						</li>
-						<li
-							onClick={() => handleLinkClick("/project")}
-							onKeyDown={handleKeyDown}
-						>
+						<li>
 							<Link
 								title="Clique aqui para ir a Projects"
 								to="/project"
-								className={`text-base lg:text-xl px-4 py-2 rounded ${selected === "/project" && "bg-indigo-600"}`}
+								className={`text-base lg:text-xl px-4 py-2 rounded ${location.pathname === "/project" ? "bg-indigo-600 text-white" : ""}`}
 							>
 								PROJECTS
 							</Link>
