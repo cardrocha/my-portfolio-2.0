@@ -1,13 +1,11 @@
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 type ButtonProps = {
-  children: ReactNode
-} & ButtonHTMLAttributes<HTMLButtonElement>
+	children: ReactNode;
+} & ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button = ({ children, ...rest }:ButtonProps) => {
-  return ( 
-    <button {...rest}>{children}</button>
-   );
-}
- 
+const Button = ({ children, ...rest }: ButtonProps) => {
+	return <button {...rest}>{children}</button>;
+};
+
 export default Button;

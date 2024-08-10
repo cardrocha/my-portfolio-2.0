@@ -1,9 +1,7 @@
-import Status from "../components/Status"
+import Status from "../components/Status";
 
 const About = () => {
-  return (
-    <Status />
-  )
-}
+	return <Status />;
+};
 
-export default About
+export default About;
