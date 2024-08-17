@@ -5,7 +5,7 @@ const Quest = () => {
 	return (
 		<section className="pb-24">
 			<div>
-				<h2 className="text-3xl lg:text-4xl text-indigo-900 dark:text-white font-bold text-center py-24">
+				<h2 className="text-3xl lg:text-4xl text-indigo-800 dark:text-white font-bold text-center py-24">
 					Linha do Tempo de Missões
 				</h2>
 				<div className="flex items-center justify-center">
@@ -14,7 +14,7 @@ const Quest = () => {
 				<ul className="flex flex-col items-center justify-center gap-5 text-center list-none pt-10">
 					<li className="flex flex-col items-center">
 						<div className="border-[1px] border-indigo-600 dark:border-white h-12" />
-						<PiCircleFill className="text-xl text-indigo-900 dark:text-white" />
+						<PiCircleFill className="text-xl text-indigo-800 dark:text-white" />
 						<div>
 							<p className="text-xl text-indigo-600 dark:text-white">
 								2020 -{" "}
@@ -33,7 +33,7 @@ const Quest = () => {
 					</li>
 					<li className="flex flex-col items-center">
 						<div className="border-[1px] border-indigo-600 dark:border-white h-12" />
-						<PiCircleFill className="text-xl text-indigo-900 dark:text-white" />
+						<PiCircleFill className="text-xl text-indigo-800 dark:text-white" />
 						<div>
 							<p className="text-xl text-indigo-600 dark:text-white">
 								2021 -{" "}
@@ -52,7 +52,7 @@ const Quest = () => {
 					</li>
 					<li className="flex flex-col items-center">
 						<div className="border-[1px] border-indigo-600 dark:border-white h-12" />
-						<PiCircleFill className="text-xl text-indigo-900 dark:text-white" />
+						<PiCircleFill className="text-xl text-indigo-800 dark:text-white" />
 						<div>
 							<p className="text-xl text-indigo-600 dark:text-white">
 								2023 -{" "}
@@ -71,7 +71,7 @@ const Quest = () => {
 					</li>
 					<li className="flex flex-col items-center">
 						<div className="border-[1px] border-indigo-600 dark:border-white h-12" />
-						<PiCircleFill className="text-xl text-indigo-900 dark:text-white" />
+						<PiCircleFill className="text-xl text-indigo-800 dark:text-white" />
 						<div>
 							<p className="text-xl text-indigo-600 dark:text-white">
 								2022 a 2024 -{" "}
@@ -95,7 +95,7 @@ const Quest = () => {
 					</li>
 					<li className="flex flex-col items-center">
 						<div className="border-[1px] border-indigo-600 dark:border-white h-12" />
-						<PiCircleFill className="text-xl text-indigo-900 dark:text-white" />
+						<PiCircleFill className="text-xl text-indigo-800 dark:text-white" />
 						<div>
 							<p className="text-xl text-indigo-600 dark:text-white">
 								2024 -{" "}
@@ -119,7 +119,7 @@ const Quest = () => {
 					</li>
 					<li className="flex flex-col items-center">
 						<div className="border-[1px] border-indigo-600 dark:border-white h-12" />
-						<PiCircleFill className="text-xl text-indigo-900 dark:text-white" />
+						<PiCircleFill className="text-xl text-indigo-800 dark:text-white" />
 						<div>
 							<p className="text-xl text-indigo-600 dark:text-white">
 								Futuro -{" "}

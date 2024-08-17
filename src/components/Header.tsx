@@ -87,9 +87,9 @@ const Header = () => {
 					className="absolute top-4 right-2 md:top-[26px] md:right-7 bg-black dark:bg-white dark:text-black border-2 border-indigo-950 dark:border-white text-base lg:text-xl px-4 py-1 rounded-full"
 				>
 					{darkMode ? (
-						<CiLight className="text-2xl" />
-					) : (
 						<MdDarkMode className="text-2xl" />
+					) : (
+						<CiLight className="text-2xl" />
 					)}
 				</Button>
 				<nav

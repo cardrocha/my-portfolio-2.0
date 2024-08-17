@@ -42,7 +42,7 @@ const RepoBox = ({
 			</div>
 			<div className="flex items-center justify-center gap-4 mt-2">
 				<a
-					className="bg-indigo-800 hover:bg-indigo-500 py-1 px-4 rounded-lg text-white"
+					className="bg-indigo-800 hover:bg-indigo-500 py-2 px-6 rounded-lg text-white"
 					href={link}
 					rel="noreferrer"
 					target="_blank"
@@ -50,7 +50,7 @@ const RepoBox = ({
 					Link
 				</a>
 				<a
-					className="bg-indigo-800 hover:bg-indigo-500 py-1 px-4 rounded-lg text-white"
+					className="bg-indigo-800 hover:bg-indigo-500 py-2 px-6 rounded-lg text-white"
 					href={deploy}
 					rel="noreferrer"
 					target="_blank"

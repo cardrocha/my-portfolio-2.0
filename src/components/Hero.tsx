@@ -37,7 +37,7 @@ const Hero = () => {
 				</h2>
 				<div className="flex flex-col md:flex-row items-center gap-2 mx-auto">
 					<a
-						className="text-xl whitespace-nowrap lg:text-2xl text-center text-white font-bold w-40 lg:w-52 bg-indigo-700 hover:bg-indigo-900 px-2 py-1 lg:px-3 lg:py-2 border-2 border-black rounded-xl"
+						className="text-xl whitespace-nowrap lg:text-2xl text-center text-white font-semibold w-40 lg:w-52 bg-indigo-700 hover:bg-indigo-900 px-2 py-1 lg:px-5 lg:py-3 border-2 border-black rounded-xl"
 						target="_blank"
 						rel="noreferrer"
 						href="/ricardo-2024.pdf"

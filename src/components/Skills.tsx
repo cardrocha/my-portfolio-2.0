@@ -26,10 +26,10 @@ const Skills = () => {
 
 	return (
 		<div className="max-w-screen-xlxl mx-auto container flex flex-col gap-14 p-6 lg:p-24">
-			<h2 className="text-3xl lg:text-4xl text-center text-indigo-900 dark:text-white font-bold">
+			<h2 className="text-3xl lg:text-4xl text-center text-indigo-800 font-bold">
 				Tecnologia e Habilidades
 			</h2>
-			<h3 className="text-2xl lg:text-3xl text-center text-indigo-900 dark:text-white font-bold">
+			<h3 className="text-2xl lg:text-3xl text-center text-indigo-800 font-bold">
 				Minhas princiais skills:
 			</h3>
 			<ul className="flex items-center gap-2 lg:gap-0 justify-center md:justify-around">
@@ -216,7 +216,7 @@ const Skills = () => {
 							</p>
 						</div>
 					)}
-					<h3 className="text-3xl text-center mt-10 lg:mt-0 mb-10 text-indigo-900 dark:text-white font-bold">
+					<h3 className="text-3xl text-center mt-10 lg:mt-0 mb-10 text-indigo-800 font-bold">
 						Outras skills:
 					</h3>
 				</div>
