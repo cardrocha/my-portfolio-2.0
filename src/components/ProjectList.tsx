@@ -1,4 +1,4 @@
-import type { Repos } from "../pages/Project";
+import type { Repos } from '../types/types'
 import RepoBox from "./RepoBox";
 
 type Props = {
