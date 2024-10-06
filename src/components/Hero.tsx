@@ -25,11 +25,14 @@ const Hero = () => {
 					, você terá acesso a um profissional qualificado, especializado em
 					transformar designs em interfaces interativas e responsivas.
 				</p>
-				<img
-					className="w-72 h-72 border-2 border-gray-800 dark:border-gray-500 object-cover rounded-full drop-shadow-2xl"
-					src={perfil}
-					alt="foto de perfil"
-				/>
+				<div className="relative">
+					<img
+						className="w-72 h-72 border-2 border-gray-800 dark:border-gray-500 object-cover rounded-full drop-shadow-2xl"
+						src={perfil}
+						alt="foto de perfil"
+					/>
+					<p className="absolute bottom-0 -right-2 opacity-85 bg-indigo-600 font-semibold text-2xl text-white text-center p-2 px-5 whitespace-nowrap rounded">2 anos de experiência</p>
+				</div>
 			</div>
 			<div className="flex flex-col gap-4 mt-32">
 				<h2 className="text-indigo-800 text-2xl lg:text-3xl text-center font-bold">
