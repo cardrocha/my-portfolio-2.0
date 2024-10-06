@@ -7,18 +7,18 @@ const Status = () => {
   return (
     <section className="mx-auto max-w-screen-xl container">
       <div className="flex flex-col xl:flex-row gap-5 items-center justify-center py-10 w-full">
-        <h2 className="text-4xl lg:text-5xl font-bold text-indigo-800 pb-2 whitespace-nowrap">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-indigo-800 pb-2 whitespace-nowrap">
           Level: 2<span className="text-2xl"> year</span>
         </h2>
-        <p className="text-2xl lg:text-3xl text-indigo-800 font-bold text-center whitespace-nowrap">
-          <span className="text-2xl font-extrabold lg:text-4xl">Classe:</span>{" "}
+        <p className="text-2xl md:text-4xl font-bold text-indigo-800 whitespace-nowrap">
+          <span className="text-2xl font-extrabold md:text-4xl lg:text-4xl">Classe:</span>{" "}
           Developer Front-end
         </p>
         <div className="flex gap-5 items-center">
-          <p className="text-xl lg:text-2xl text-indigo-800 font-bold mt-2 whitespace-nowrap">
+          <p className="text-xl md:text-2xl text-indigo-800 font-bold mt-2 whitespace-nowrap">
             EXP: 65052
           </p>
-          <p className="text-xl lg:text-2xl text-indigo-800 font-bold mt-2 whitespace-nowrap">
+          <p className="text-xl md:text-2xl text-indigo-800 font-bold mt-2 whitespace-nowrap">
             NEXT: 42
           </p>
         </div>
@@ -111,7 +111,9 @@ const Status = () => {
             src={perfil}
             alt="foto de perfil"
           />
-					<p className="absolute bottom-5 -right-2 opacity-85 bg-indigo-600 font-semibold text-2xl text-white text-center p-2 px-5 whitespace-nowrap rounded">2 anos de experiência</p>
+          <p className="absolute bottom-5 -right-2 opacity-85 bg-indigo-600 font-semibold text-2xl text-white text-center p-2 px-6 whitespace-nowrap rounded">
+          Level: 2 <span className="text-base">years of experience</span>
+          </p>
         </div>
       </div>
       <div className="px-10 py-10">
@@ -130,7 +132,8 @@ const Status = () => {
                 {" "}
                 linguagem C#
               </span>. <br />
-              <br /> Fascinado pelo poder da criação digital. Em 2021, ingressou na guilda
+              <br /> Fascinado pelo poder da criação digital. Em 2021, ingressou
+              na guilda
               <span className="font-bold underline"> FreeCodeCamp</span>, onde
               iniciou as artes do
               <span className="font-bold underline italic">
@@ -142,20 +145,21 @@ const Status = () => {
               banda de rock. <br />
               <br />
               <span className="font-bold">Formação e Treinamento</span>:
-              <span className="font-bold"> Ricardo</span> em sua busca
-              por conhecimento, em 2024, concluiu o épico curso
+              <span className="font-bold"> Ricardo</span> em sua busca por
+              conhecimento, em 2024, concluiu o épico curso
               <span className="font-bold underline italic">
                 {" "}
                 Full-Stack Python
               </span>{" "}
               na prestigiosa Academia
-              <span className="font-bold underline"> EBAC</span>. Onde
-              aprimorou suas habilidades em
+              <span className="font-bold underline"> EBAC</span>. Onde aprimorou
+              suas habilidades em
               <span className="font-bold underline italic">
                 {" "}
                 React, TypeScript e Styled-Components
               </span>
-              , tornando-se um verdadeiro mestre das boas práticas e dos métodos ágeis, incluindo os lendários
+              , tornando-se um verdadeiro mestre das boas práticas e dos métodos
+              ágeis, incluindo os lendários
               <span className="font-bold underline italic">
                 {" "}
                 Code Clean, BEM e SMACSS
@@ -164,7 +168,7 @@ const Status = () => {
             </p>
             <p className="text-indigo-900 text-xl font-medium py-4">
               Em julho de 2024, Ricardo uniu-se ao clã{" "}
-              <span className="font-bold underline">Leaf Pallete</span>, focado
+              <a href="https://www.leafpallete.com/" target="_blank" className="text-indigo-950 font-bold underline">Leaf Pallete</a>, focado
               em soluções inovadoras de Designer. Como Desenvolvedor Front-end
               Júnior, ele enfrenta os desafios do{" "}
               <span className="font-bold underline">framework Next.js</span>{" "}
