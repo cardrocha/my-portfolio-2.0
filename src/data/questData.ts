@@ -12,12 +12,12 @@ export const quests: Quest[] = [
   },
   {
     id: 2,
-    year: "2021",
+    year: "2021 a 2024",
     title: "FreeCodeCamp",
     subtitle: "Design Responsivo para a Web",
     technologies: "HTML, CSS básico a intermediário",
-    status: "Em Andamento",
-    statusColor: "text-yellow-600",
+    status: "Concluída",
+    statusColor: "text-green-600",
   },
   {
     id: 3,
@@ -52,8 +52,8 @@ export const quests: Quest[] = [
     title: "Voluntário na Leaf Pallete",
     subtitle: "Atuo como desenvolvedor front-end júnior",
     technologies: "Next.js, Typescript, Tailwind css, Bun, Biome",
-    status: "Desde julho",
-    statusColor: "text-green-600",
+    status: "Desde julho - Missão temporariamente interrompida",
+    statusColor: "text-red-600",
   },
   {
     id: 7,

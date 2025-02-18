@@ -43,7 +43,7 @@ const Hero = () => {
 						className="text-xl whitespace-nowrap lg:text-2xl text-center text-white font-semibold w-40 lg:w-52 bg-indigo-700 hover:bg-indigo-900 px-2 py-1 lg:px-5 lg:py-3 border-2 border-black rounded-xl"
 						target="_blank"
 						rel="noreferrer"
-						href="/ricardo-2024.pdf"
+						href="/src/assets/ricardo-2025.pdf"
 						title="Clique aqui para fazer o download"
 					>
 						Download CV
