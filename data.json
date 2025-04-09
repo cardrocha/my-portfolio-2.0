@@ -1,0 +1,157 @@
+[
+	{
+		"id": "html",
+		"title": "HTML",
+		"description": "HTML (Linguagem de Marcação de HiperTexto) é utilizado para criar páginas da web, permitindo aos desenvolvedores estruturar e organizar o conteúdo através de tags específicas. É a base fundamental para a construção de websites e proporciona a estrutura necessária para incorporar elementos como texto, imagens, links e formulários."
+	},
+	{
+		"id": "css",
+		"title": "CSS",
+		"description": "CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem que permite estilizar páginas da web, controlando aspectos visuais como cores, fontes e layout. Ele separa o conteúdo estrutural (HTML) da apresentação visual, oferecendo flexibilidade e consistência no design das páginas."
+	},
+	{
+		"id": "javascript",
+		"title": "JavaScript",
+		"description": "JavaScript é uma linguagem de programação usada principalmente para tornar as páginas da web interativas. Ela permite aos desenvolvedores controlar o comportamento e o conteúdo de uma página, respondendo a eventos e manipulando elementos HTML."
+	},
+	{
+		"id": "git",
+		"title": "Git",
+		"description": "Git é um sistema de controle de versão usado para acompanhar as mudanças no código-fonte de um projeto. Ele simplifica o trabalho em equipe, permitindo que os desenvolvedores trabalhem em paralelo, gerenciem diferentes versões do código e integrem suas contribuições de forma eficiente."
+	},
+	{
+		"id": "jquery",
+		"title": "jQuery",
+		"description": "jQuery é uma biblioteca de JavaScript rápida, concisa e repleta de recursos, que simplifica tarefas como manipulação de documentos HTML, manipulação de eventos, animações e requisições AJAX. Ela simplifica a escrita de scripts do lado do cliente, fornecendo uma sintaxe simplificada e compatibilidade com diferentes navegadores."
+	},
+	{
+		"id": "bootstrap",
+		"title": "Bootstrap",
+		"description": "Bootstrap é um framework front-end que simplifica o desenvolvimento de interfaces web responsivas, oferecendo uma coleção de estilos e componentes prontos para uso, o que permite aos desenvolvedores criar rapidamente páginas web que se adaptam a diferentes dispositivos e tamanhos de tela."
+	},
+	{
+		"id": "sass",
+		"title": "Sass",
+		"description": "Sass é uma linguagem de folha de estilos que simplifica a escrita e a manutenção de estilos em projetos web, oferecendo recursos avançados como variáveis, aninhamento e mixins. Ele ajuda os desenvolvedores a criar estilos CSS de forma mais eficiente e organizada, melhorando o fluxo de trabalho de design e desenvolvimento."
+	},
+	{
+		"id": "gulp",
+		"title": "Gulp",
+		"description": "Gulp é uma ferramenta de automação de tarefas de desenvolvimento web. Ele permite aos desenvolvedores automatizar tarefas repetitivas, como minificação e concatenação de arquivos CSS e JavaScript, otimização de imagens, execução de testes automatizados e otimização de imagens, melhorando a eficiência do processo de desenvolvimento."
+	},
+	{
+		"id": "less",
+		"title": "Less",
+		"description": "Less é uma linguagem de folhas de estilo dinâmica que estende a sintaxe do CSS, oferecendo recursos como variáveis, mixins, aninhamento e funções. Ele facilita a escrita e a organização de estilos em projetos web, permitindo aos desenvolvedores criar estilos CSS de forma mais eficiente e modular."
+	},
+	{
+		"id": "grunt",
+		"title": "Grunt",
+		"description": "Grunt é uma ferramenta de automação de tarefas para desenvolvimento web. Ele permite aos desenvolvedores automatizar várias tarefas, como minificação de arquivos, concatenação, execução de testes e reduzindo o tempo gasto em tarefas repetitivas durante o desenvolvimento de projetos web."
+	},
+	{
+		"id": "oop",
+		"title": "OOP",
+		"description": "A Programação Orientada a Objetos (OOP) é um paradigma de programação que se concentra na organização do código em objetos, que combinam dados e funcionalidades relacionadas. Isso promove a reutilização, modularidade e flexibilidade do código, simplificando sua manutenção e compreensão."
+	},
+	{
+		"id": "es6",
+		"title": "ES6+",
+		"description": "O ES6+, ou ECMAScript 6+, é a versão mais recente do JavaScript. O ES6+ inclui recursos modernos que tornam o código mais conciso, legível e eficiente. Estes recursos incluem: classes, arrow functions, const e let para declaração de variáveis, desestruturação, promessas, entre outros."
+	},
+	{
+		"id": "nodejs",
+		"title": "Node.js",
+		"description": "Node.js é um ambiente de execução de JavaScript do lado do servidor, conhecido por sua eficiência e capacidade de lidar com conexões simultâneas de forma assíncrona. Ele permite aos desenvolvedores criar aplicativos web escaláveis e de alto desempenho, tornando o JavaScript uma opção viável para desenvolvimento de servidores e serviços de backend."
+	},
+	{
+		"id": "vuejs",
+		"title": "Vue.js",
+		"description": "Vue é uma abstração de JavaScript para construção de interfaces de aplicações de utilizador. Ela constrói sobre a HTML, CSS e JavaScript padrão, e fornece um modelo de programação declarativa baseado em componente que ajuda-nos a desenvolver eficientemente interfaces de utilizador, sejam elas simples ou complexas."
+	},
+	{
+		"id": "react",
+		"title": "React.js",
+		"description": "React é uma biblioteca JavaScript usada para construir interfaces de usuário dinâmicas e reativas. Desenvolvida pelo Facebook, ela simplifica o desenvolvimento de aplicativos web, permitindo a criação de componentes reutilizáveis que atualizam automaticamente com as mudanças nos dados."
+	},
+	{
+		"id": "typescript",
+		"title": "TypeScript",
+		"description": "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft que adiciona tipagem estática opcional ao JavaScript. Ela oferece recursos avançados, como interfaces, tipos de dados avançados e compilação para JavaScript puro. TypeScript facilita o desenvolvimento de aplicativos web complexos."
+	},
+	{
+		"id": "styled",
+		"title": "Styled-Components",
+		"description": "Styled-components é uma biblioteca para React e React Native que permite escrever estilos CSS diretamente dentro dos componentes JavaScript, usando uma sintaxe semelhante ao CSS. Ele fornece uma maneira simples e intuitiva de criar estilos específicos para cada componente, garantindo encapsulamento, reutilização e facilitando a manutenção do código."
+	},
+	{
+		"id": "router",
+		"title": "React Router",
+		"description": "O React Router é uma biblioteca para React que facilita a navegação entre diferentes partes de uma aplicação web. Ele permite definir rotas para diferentes URLs e renderizar componentes específicos quando essas rotas são correspondidas. Isso ajuda a criar aplicativos de página única (SPAs) e a organizar a lógica de navegação de forma eficiente."
+	},
+	{
+		"id": "redux",
+		"title": "Redux",
+		"description": "Redux é uma biblioteca de gerenciamento de estado para aplicativos JavaScript, geralmente usada com React ou outras bibliotecas de visualização. Ele centraliza o estado da aplicação em um único local chamado de 'store' e gerencia as mudanças de estado por meio de 'actions' e 'reducers'."
+	},
+	{
+		"id": "jest",
+		"title": "Jest",
+		"description": "Jest é um framework de testes de JavaScript mantido pelo Facebook, projetado principalmente para testar aplicativos React. Ele oferece uma configuração simples e rápida, suporte para testes unitários, integração e snapshots, além de uma ampla gama de recursos para facilitar o desenvolvimento de testes eficazes e confiáveis."
+	},
+	{
+		"id": "cypress",
+		"title": "Cypress",
+		"description": "Cypress é uma ferramenta de teste de front-end de código aberto, que permite aos desenvolvedores e testadores escrever, executar e depurar testes de forma rápida e fácil. Ele é conhecido por sua sintaxe simples e intuitiva, bem como por sua capacidade de simular interações do usuário de maneira realista em navegadores modernos."
+	},
+	{
+		"id": "ubuntu",
+		"title": "Ubuntu OS",
+		"description": "Ubuntu é um sistema operacional de código aberto baseado em Linux, desenvolvido e mantido pela empresa Canonical. Ele é conhecido por sua facilidade de uso, estabilidade e segurança, e é uma das distribuições Linux mais populares. O Ubuntu é amplamente utilizado em desktops, oferecendo uma variedade de recursos e aplicativos gratuitos."
+	},
+	{
+		"id": "nextjs",
+		"title": "Next.js",
+		"description": "Next.js é um framework para React que simplifica a criação de aplicativos web modernos, oferecendo funcionalidades como renderização do lado do servidor, roteamento automático e suporte a TypeScript. Ele ajuda os desenvolvedores a construir aplicativos web eficientes e escaláveis de forma mais rápida e fácil."
+	},
+	{
+		"id": "tailwind",
+		"title": "Tailwind CSS",
+		"description": "Tailwind CSS é uma biblioteca de estilos CSS altamente configurável e baseada em classes utilitárias. Em vez de fornecer estilos pré-definidos, ele fornece classes utilitárias que podem ser combinadas para criar estilos personalizados de forma eficiente. Com Tailwind CSS, os desenvolvedores podem criar interfaces de usuário rapidamente."
+	},
+	{
+		"id": "python",
+		"title": "Python",
+		"description": "Python é uma linguagem de programação de alto nível conhecida por sua simplicidade, versatilidade e legibilidade. Amplamente utilizada em diferentes domínios, desde desenvolvimento web até ciência de dados e automação, Python é apreciada por sua vasta biblioteca padrão, comunidade ativa e facilidade de aprendizado."
+	},
+	{
+		"id": "django",
+		"title": "Django",
+		"description": "Django é um framework web em Python que simplifica o desenvolvimento de aplicativos web complexos, oferecendo recursos como um ORM para interação com bancos de dados, sistema de administração automático e autenticação de usuários. Ele promove desenvolvimento ágil e seguro, proporcionando uma base sólida para aplicativos web escaláveis."
+	},
+	{
+		"id": "sql",
+		"title": "PostgreSQL",
+		"description": "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua confiabilidade e recursos avançados. Ele suporta consultas complexas, transações ACID e é altamente extensível. É amplamente utilizado em uma variedade de aplicativos, desde pequenos projetos até sistemas empresariais de grande escala."
+	},
+	{
+		"id": "poetry",
+		"title": "Poetry",
+		"description": "Poetry é uma ferramenta para gerenciamento de dependências e empacotamento de projetos em Python. Ele simplifica o processo de criação, publicação e gerenciamento de pacotes Python, garantindo um ambiente virtual consistente e facilitando a resolução de dependências. Poetry é amplamente utilizado por desenvolvedores para criar e compartilhar seus projetos."
+	},
+	{
+		"id": "docker",
+		"title": "Docker",
+		"description": "Docker é uma plataforma que simplifica a criação, implantação e execução de aplicativos em contêineres, unidades de software leves e portáteis. Ele facilita a construção de ambientes consistentes e escaláveis, garantindo a independência entre aplicações e sistemas operacionais."
+	},
+	{
+		"id": "rest",
+		"title": "REST API",
+		"description": "REST API é uma interface que permite que clientes se comuniquem com um servidor web utilizando operações HTTP padrão, como GET, POST, PUT e DELETE, para acessar e manipular recursos. Essas APIs são projetadas para serem simples, escaláveis e oferecerem uma interface uniforme para integração de serviços e comunicação entre sistemas."
+	},
+	{
+		"id": "vite",
+		"title": "Vite",
+		"description": "Vite é uma ferramenta moderna de desenvolvimento front-end que foi criada por Evan You, o mesmo criador do Vue.js. O Vite se destaca por ser extremamente rápido e eficiente, oferecendo uma alternativa ágil às tradicionais ferramentas de build como Webpack e Parcel."
+	}
+]
