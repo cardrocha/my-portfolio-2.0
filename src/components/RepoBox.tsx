@@ -33,7 +33,7 @@ const RepoBox = ({
 	};
 
 	return (
-		<div className="mb-12">
+		<div className="mb-3 lg:mb-12">
 			<div className="flex flex-col justify-between h-full lg:h-full border-4 border-indigo-800 rounded-xl p-4">
 				<div>
 					<h1 className="box-decoration-slice bg-gradient-to-l from-indigo-600 to-indigo-800 text-white text-center text-2xl p-2 rounded-lg font-bold mb-4">
