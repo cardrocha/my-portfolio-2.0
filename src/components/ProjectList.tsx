@@ -20,7 +20,7 @@ const ProjectList = ({ repo }: Props) => {
 						link={repo.link}
 						deploy={repo.deploy}
 					/>
-				))}z
+				))}
 			</ul>
 		</div>
 	);
